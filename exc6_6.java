@@ -35,14 +35,15 @@ public class exc6_6 {
         Scanner input = new Scanner(System.in);
         boolean stop = false;
         while (!stop) {
-            System.out.println("Введите \"stop\" если хотите закончить.");
+            System.out.println("Введите \"stop\" если хотите закончить.\n" +
+                    "Нажмите \"Enter\" если хотите продолжить.");
             String in = input.nextLine().toLowerCase(Locale.ROOT);
             if (in.equals("stop")) {
                 stop = true;
             } else {
-                System.out.println("Укажите x: ");
+                System.out.print("Укажите x: ");
                 x = Double.parseDouble(input.nextLine());
-                System.out.println("Укажите y: ");
+                System.out.print("Укажите y: ");
                 y = Double.parseDouble(input.nextLine());
                 if (Oblast(x, y)) {
                     System.out.println("Точка попала в область :)");
