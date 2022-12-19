@@ -18,7 +18,7 @@ public class exc6_3 {
         if (ans == 2) {
             for (double i = 1; i <= 8; i++) {
                 for (double j = 1; j <= 3; j++) {
-                    incr *= (long) (j - i);
+                    incr *= (long) (j + i);
                 }
                 summincr += incr;
                 incr = 1;
