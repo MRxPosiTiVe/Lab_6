@@ -10,8 +10,7 @@ public class exc6_10 {
             for (int i = 0; i < n; i++) {
                 sum += (cos(n - h * i) - sin(pow(n - h * i, 2))) * h;
             }
-            System.out.println(n + "\n" + h + "\n" + sum + "\n5.18\n" + abs(sum - 5.18) + "\n");
+            System.out.printf("%-9.0f\n%e\n%f\n5.18\n%f\n\n", n, h, sum, abs(sum - 5.18));
         }
-
     }
 }
