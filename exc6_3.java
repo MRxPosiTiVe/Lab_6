@@ -17,25 +17,25 @@ public class exc6_3 {
         }
         if (ans == 2) {
             for (double i = 1; i <= 8; i++) {
+                incr = 1;
                 for (double j = 1; j <= 3; j++) {
                     incr *= (long) (j + i);
                 }
                 summincr += incr;
-                incr = 1;
             }
             System.out.println("На тебе на 2-е: --> " + summincr);
         }
         if (ans == 3) {
             for (double i = 1; i <= 8; i++) {
+                inincr = 0;
                 for (double j = 1; j <= i; j++) {
+                    incr = 1;
                     for (double k = 1; k <= 2 * (i + j); k++) {
-                        incr *= (long) (2 * j - (3 * (i - k)));
+                        incr *= (long) ((2 * j) - (3 * (i - k)));
                     }
                     inincr += incr;
-                    incr = 1;
                 }
                 ssinc += inincr;
-                inincr = 1;
             }
             System.out.println("На тебе на 3-е: --> " + ssinc);
         }
